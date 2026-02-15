@@ -6,7 +6,7 @@
     <title>A Beautiful Life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -77,6 +77,107 @@
             background-color: #e0b400;
         }
 
+        /* Read for Free Banner */
+        .cta-banner {
+            width: 100%;
+            background-color: #F5C518;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .cta-banner a {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        /* Gift Section */
+        .gift-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 40px;
+            background-color: #ffffff;
+        }
+
+        .gift-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #dce6f0;
+            border-radius: 8px;
+            padding: 24px 32px;
+            max-width: 900px;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .gift-card-text h3 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .gift-card-text p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .gift-card-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .purchase-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid #F5C518;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .purchase-button:hover {
+            background-color: #F5C518;
+        }
+
+        .gift-emoji {
+            font-size: 48px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1a1a3e;
+            padding: 30px 40px;
+        }
+
+        .footer-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            font-weight: 700;
+            color: #F5C518;
+            margin-bottom: 6px;
+        }
+
+        .footer-tagline {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            color: #cccccc;
+        }
+
         /* Mobile Responsiveness */
         @media screen and (max-width: 768px) {
             .hero-title {
@@ -94,6 +195,28 @@
                 padding: 14px 40px;
                 width: 90%;
                 max-width: 320px;
+            }
+
+            .cta-banner a {
+                font-size: 24px;
+            }
+
+            .gift-section {
+                padding: 20px 16px;
+            }
+
+            .gift-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .gift-card-actions {
+                flex-direction: column;
+            }
+
+            .footer {
+                padding: 24px 16px;
             }
         }
 
@@ -114,6 +237,26 @@
                 width: 90%;
                 max-width: 280px;
             }
+
+            .cta-banner a {
+                font-size: 20px;
+            }
+
+            .gift-card-text h3 {
+                font-size: 16px;
+            }
+
+            .gift-card-text p {
+                font-size: 13px;
+            }
+
+            .footer-title {
+                font-size: 24px;
+            }
+
+            .footer-tagline {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -127,8 +270,26 @@
         <img src="images/CoverPage.jpeg" alt="A Beautiful Life - Book Cover">
     </div>
 
-    <div class="cta-section">
-        <a href="https://ln.run/9Q9-T" class="cta-button">Read for Free</a>
+    <div class="cta-banner">
+        <a href="https://ln.run/9Q9-T">Read for Free</a>
     </div>
+
+    <div class="gift-section">
+        <div class="gift-card">
+            <div class="gift-card-text">
+                <h3>Share the magic of reading! Gift this book.</h3>
+                <p>Purchase a hardcopy of this book and gift your friends.</p>
+            </div>
+            <div class="gift-card-actions">
+                <a href="https://www.amazon.in/Beautiful-Sachin-Gupta-Yuvaan-books/dp/9392088310?s=bazaar" class="purchase-button">Purchase Now</a>
+                <span class="gift-emoji">🎁📚</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-title">A Beautiful Life</div>
+        <div class="footer-tagline">Life needs to be lived, not just to be passed. Read book for free.</div>
+    </footer>
 </body>
 </html>
